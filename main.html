@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <meta charset="UTF-8">
+        <!-- title and description -->
+        <title>Minesweeper</title>
+        <meta name="description" content="Description content.">
+        <!-- viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <!-- styles -->
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        />
+        <!-- open graph -->
+        <meta property="og:title" content="Open graph title" />
+        <!--
+        <meta property="og:type" content="video/mp4" />
+        <meta property="og:video" content="https://site.com/video/example.mp4" />
+        -->
+        <!--
+        <meta property="og:type" content="audio/mp3" />
+        <meta property="og:audio" content="https://site.com/audio/example.mp3" />
+        -->
+        <meta property="og:type" content="article" /> <!-- if not audio and not video -->
+        <meta property="og:url" content="https://website.com/" />
+        <meta property="og:image" content="src/icons/og.png" /> <!-- OG image is 1200×630 pixels  -->
+        <meta property="og:site_name" content="website.com" /> <!-- not important -->
+        <meta property="og:description" content="Description content." /> <!-- not important -->
+        <meta property="og:locale" content="en_US" /> <!-- default: "en_US" -->
+    </head>
+    <body>
+        <ul class="notifications"></ul>
+        <main>
+            
+            <div class="startMenu">
+                Field settings:
+                <div class="inputFields">
+                    Width:
+                    <input type="number" placeholder="Width" class="inputField">
+                    Height:
+                    <input type="number" placeholder="Height" class="inputField">
+                    Amount of bombs on field:
+                    <input type="number" placeholder="Bombs" class="inputField">
+                </div>
+                <div class="startBtn"><p>Start</p></div>
+            </div>
+            <div class="skin">
+                <div class="upperMenu">
+                    <div class="flagsRemain"></div>
+                    <div class="restartBtn"></div>
+                    <div class="timer"></div>
+                </div>
+                <div class="game"></div>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="main.js"></script>
+    </body>
+</html>
